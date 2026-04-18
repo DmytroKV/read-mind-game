@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header>
+            <h1>💎 Simulator Clicker</h1>
+            <p class="tagline">Click your way to fortune!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="game-section">
+                <div class="stats-display">
+                    <div class="stat">
+                        <span class="stat-label">Total Score</span>
+                        <span class="stat-value" id="score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Per Click</span>
+                        <span class="stat-value" id="perClick">1</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Per Second</span>
+                        <span class="stat-value" id="perSecond">0</span>
+                    </div>
+                </div>
+
+                <div class="clicker-area">
+                    <button class="clicker-button" id="clickerBtn">
+                        <span class="click-text">CLICK ME!</span>
+                    </button>
+                    <p class="click-feedback" id="feedback"></p>
+                </div>
+            </div>
+
+            <div class="upgrades-section">
+                <h2>🚀 Upgrades</h2>
+                <div class="upgrades-grid">
+                    <button class="upgrade-btn" id="upgrade1" data-type="1">
+                        <div class="upgrade-title">Better Fingers</div>
+                        <div class="upgrade-desc">+1 per click</div>
+                        <div class="upgrade-cost">Cost: <span>10</span></div>
+                        <div class="upgrade-owned">Owned: <span>0</span></div>
+                    </button>
+
+                    <button class="upgrade-btn" id="upgrade2" data-type="2">
+                        <div class="upgrade-title">Auto Clicker</div>
+                        <div class="upgrade-desc">+1 per second</div>
+                        <div class="upgrade-cost">Cost: <span>100</span></div>
+                        <div class="upgrade-owned">Owned: <span>0</span></div>
+                    </button>
+
+                    <button class="upgrade-btn" id="upgrade3" data-type="3">
+                        <div class="upgrade-title">Power Surge</div>
+                        <div class="upgrade-desc">+5 per click</div>
+                        <div class="upgrade-cost">Cost: <span>500</span></div>
+                        <div class="upgrade-owned">Owned: <span>0</span></div>
+                    </button>
+
+                    <button class="upgrade-btn" id="upgrade4" data-type="4">
+                        <div class="upgrade-title">Robot Army</div>
+                        <div class="upgrade-desc">+10 per second</div>
+                        <div class="upgrade-cost">Cost: <span>1000</span></div>
+                        <div class="upgrade-owned">Owned: <span>0</span></div>
+                    </button>
+
+                    <button class="upgrade-btn" id="upgrade5" data-type="5">
+                        <div class="upgrade-title">Mega Multiplier</div>
+                        <div class="upgrade-desc">x2 all values</div>
+                        <div class="upgrade-cost">Cost: <span>5000</span></div>
+                        <div class="upgrade-owned">Owned: <span>0</span></div>
+                    </button>
+
+                    <button class="upgrade-btn" id="upgrade6" data-type="6">
+                        <div class="upgrade-title">Quantum Leap</div>
+                        <div class="upgrade-desc">+50 per click</div>
+                        <div class="upgrade-cost">Cost: <span>10000</span></div>
+                        <div class="upgrade-owned">Owned: <span>0</span></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <button class="reset-btn" id="resetBtn">Reset Game</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
